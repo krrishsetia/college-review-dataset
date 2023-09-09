@@ -17,9 +17,9 @@ from sklearn.neighbors import KNeighborsClassifier
 
 pd.options.display.max_columns = 2
 pd.options.display.max_rows = 100000
-data1 = pd.read_csv('csv files/collegereview2021.csv')
-data2 = pd.read_csv('csv files/collegereview2022.csv')
-data3 = pd.read_csv('csv files/collegereview2023.csv')
+data1 = pd.read_csv('collegereview2021.csv')
+data2 = pd.read_csv('collegereview2022.csv')
+data3 = pd.read_csv('collegereview2023.csv')
 
 def func1(var):
     if any(x.isalpha() or x.isspace() for x in var):
